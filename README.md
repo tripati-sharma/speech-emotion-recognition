@@ -11,13 +11,17 @@ This project extracts audio features from the RAVDESS dataset and trains models 
 
 ## GitHub setup
 
-1. Create a new repo on GitHub.
-2. In this folder:
-   ```bash
+1. Make sure the remote is set to your GitHub repo:
+   ```powershell
+   git remote set-url origin https://github.com/tripati-sharma/speech-emotion-recognition.git
+   ```
+2. Add and commit your files:
+   ```powershell
    git add .
    git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin https://github.com/<username>/<repo>.git
+   ```
+3. Push to GitHub:
+   ```powershell
    git push -u origin main
    ```
 
