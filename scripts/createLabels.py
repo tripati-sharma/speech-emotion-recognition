@@ -7,7 +7,7 @@ emotion_map = {
     '05': 'angry', '06': 'fearful', '07': 'disgust', '08': 'surprised'
 }
 
-ravdess_dir = 'data/ravdess'
+ravdess_dir = '../data/ravdess'
 data_list = []
 
 # Walk through all files and extract emotion from filename
@@ -21,5 +21,5 @@ for root, _, files in os.walk(ravdess_dir):
 
 # Save to CSV
 df = pd.DataFrame(data_list, columns=['path', 'emotion'])
-df.to_csv('../features/ravdess_labels.csv', index=False)
+df.to_csv('../features/ravdessLabels.csv', index=False)
 print(f"CSV created with {len(df)} entries.")
